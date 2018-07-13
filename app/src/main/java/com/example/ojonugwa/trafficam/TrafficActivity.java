@@ -30,7 +30,7 @@ public class TrafficActivity extends AppCompatActivity {
         feeds.add("ten");
 
         ArrayAdapter<String> itemsAdapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, feeds);
+                new ArrayAdapter<String>(this, R.layout.list_item, feeds);
 
         ListView listView = findViewById(R.id.list);
 
