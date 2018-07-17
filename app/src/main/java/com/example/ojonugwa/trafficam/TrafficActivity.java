@@ -19,7 +19,7 @@ public class TrafficActivity extends AppCompatActivity {
 
         ArrayList<TrafficFeeds> feeds = new ArrayList<>();
         feeds.add(new TrafficFeeds("Fact", "The term ~happily ever after~ was orriginally " +
-                "used as happily untily they died"));
+                "used as happily untily they died", R.drawable.baseline_traffic_white_24));
 
         ArrayAdapter<TrafficFeeds> itemsAdapter =
                 new ArrayAdapter<TrafficFeeds>(this, R.layout.list_item, feeds);
