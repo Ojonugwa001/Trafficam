@@ -17,20 +17,12 @@ public class TrafficActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_traffic);
 
-        ArrayList<String> feeds = new ArrayList<>();
-        feeds.add("one");
-        feeds.add("two");
-        feeds.add("three");
-        feeds.add("four");
-        feeds.add("five");
-        feeds.add("six");
-        feeds.add("seven");
-        feeds.add("eight");
-        feeds.add("nine");
-        feeds.add("ten");
+        ArrayList<TrafficFeeds> feeds = new ArrayList<>();
+        feeds.add(new TrafficFeeds("Fact", "The term ~happily ever after~ was orriginally " +
+                "used as happily untily they died"));
 
-        ArrayAdapter<String> itemsAdapter =
-                new ArrayAdapter<String>(this, R.layout.list_item, feeds);
+        ArrayAdapter<TrafficFeeds> itemsAdapter =
+                new ArrayAdapter<TrafficFeeds>(this, R.layout.list_item, feeds);
 
         ListView listView = findViewById(R.id.list);
 
