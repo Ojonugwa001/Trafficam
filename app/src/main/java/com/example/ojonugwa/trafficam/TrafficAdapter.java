@@ -63,7 +63,7 @@ public class TrafficAdapter extends ArrayAdapter<TrafficFeeds> {
         TextView descrTextView = listItemView.findViewById(R.id.descr);
         // Get the username from the current TrafficFeed object and
         // set this text on the name TextView
-        descrTextView.setText(currentTrafficFeed.getUsername());
+        descrTextView.setText(currentTrafficFeed.getDescr());
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
         ImageView iconView =  listItemView.findViewById(R.id.list_item_icon);
