@@ -70,15 +70,21 @@ public class TrafficAdapter extends RecyclerView.Adapter<TrafficAdapter.TrafficV
     class TrafficViewHolder extends RecyclerView.ViewHolder {
 
         TextView listItemTrafficView;
+        TextView userName;
+        TextView descr;
 
         public TrafficViewHolder(View itemView) {
             super(itemView);
 
             listItemTrafficView = itemView.findViewById(R.id.tv_item_number);
+            userName = itemView.findViewById(R.id.user_name);
+            descr = itemView.findViewById(R.id.descr);
         }
 
         void bind(int listIndex) {
             listItemTrafficView.setText(String.valueOf(listIndex));
+            userName.setText("Fact");
+            descr.setText("The term ~happily ever after~ was orriginally used as happily until they died");
         }
     }
 }
